@@ -1,0 +1,43 @@
+{
+  "ResponseMetadata": {
+    "RequestId": "36ADE46C9A3411E8",
+    "HostId": "KpKeKaRe/z9WCKwY55sFQuUVC2WPyh64u5XaBVQTGg7od0j4W5F2cQIECodNT9xN5utm3ZubyS8=",
+    "HTTPStatusCode": 200,
+    "HTTPHeaders": {
+      "x-amz-id-2": "KpKeKaRe/z9WCKwY55sFQuUVC2WPyh64u5XaBVQTGg7od0j4W5F2cQIECodNT9xN5utm3ZubyS8=",
+      "x-amz-request-id": "36ADE46C9A3411E8",
+      "date": "Sat, 10 Nov 2018 18:39:19 GMT",
+      "content-type": "application/xml",
+      "transfer-encoding": "chunked",
+      "server": "AmazonS3"
+    },
+    "RetryAttempts": 0
+  },
+  "IsTruncated": False,
+  "KeyMarker": "",
+  "VersionIdMarker": "",
+  "Versions": [
+    {
+      "ETag": "163be6671c25e8beed29a44bd8b9c93c",
+      "Size": 66726,
+      "StorageClass": "STANDARD",
+      "Key": "lambda.zip",
+      "VersionId": "AS3U9S7gnxMCEE8i7irWoSTb15JnIzoc",
+      "IsLatest": True,
+      "LastModified": datetime.datetime(2018,
+      11,
+      10,
+      18,
+      38,
+      19,
+      tzinfo=tzutc()),
+      "Owner": {
+        "DisplayName": "dennisvriend",
+        "ID": "2f140dcd03887840c694788bb20c8c2d969f898e6e1fd9471a0b01db22d5e1e4"
+      }
+    }
+  ],
+  "Name": "blog-lambda-circuit-breaker-serverless-buc-bucket-5cwqffix14fn",
+  "Prefix": "",
+  "MaxKeys": 1000
+}

@@ -1,0 +1,17 @@
+---
+template_path: templates/api.yaml
+dependencies:
+  - storage/bucket
+parameters:
+  S3Bucket: !stack_output bucket::Name
+  S3Key: lambda.zip
+  S3Version: !s3_version bucket::Name/lambda.zip
+sceptre_user_data:
+  S3_Bucket: !stack_output bucket::Name
+  S3_Key: lambda.zip
+  S3_Version: !s3_version bucket::Name/lambda.zip
+hooks:
+  before_create:
+    - !s3_upload_file dist/lambda.zip lambda.zip bucket::Name
+  before_update:
+    - !s3_upload_file dist/lambda.zip lambda.zip bucket::Name
